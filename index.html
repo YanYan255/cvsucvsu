@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+
+<!-- Author: Shorouk Abdelaziz  https://shorouk.dev -->
+
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Socials</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      display: grid;
+      font-family: "Poppins", sans-serif;
+      place-items: center;
+    }
+
+    .wrapper {
+      padding-top: 10px;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+      justify-items: center;
+    }
+
+    .icon {
+      /* Initial icon size */
+      font-size: 2em;
+      /* Initial icon color */
+      color: #7a7a7a;
+      /* Transition for smooth hover effect */
+      transition: all 0.3s ease;
+    }
+
+    /* Enlarge icon on hover */
+    .social:hover .icon {
+      font-size: 2.5em;
+    }
+
+    .social {
+      position: relative;
+      margin: 10px;
+      cursor: pointer;
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <div class="wrapper">
+
+    <!-- Start CvSU Logo Icon -->
+    <div id="cvsulogo" onclick="navigate('https://trece.cvsu.edu.ph/student/dashboard')" class="social cvsu">
+      <span class="icon cvsu"><img src="https://upload.wikimedia.org/wikipedia/en/d/d2/Cavite_State_University_%28CvSU%29.png" alt="CvSU Logo" width="40"></span>
+    </div>
+    <!-- End CvSU Logo Icon -->
+    
+    <!-- Start Google Classroom Icon -->
+    <div id="googleclassroom" onclick="navigate('https://classroom.google.com/h')" class="social">
+      <span class="icon googleclassroom"><i class="fas fa-chalkboard"></i></span>
+    </div>
+    <!-- End Google Classroom Icon -->
+    
+    <!-- Start Gmail Icon -->
+    <div id="gmail" onclick="navigate('https://mail.google.com/')" class="social">
+      <span class="icon gmail"><i class="fab fa-google"></i></span>
+    </div>
+    <!-- End Gmail Icon -->
+
+    <!-- Start Google Docs Icon -->
+    <div id="googledocs" onclick="navigate('https://docs.google.com/document/u/0/?tgif=d')" class="social">
+      <span class="icon googledocs"><i class="fas fa-file-alt"></i></span>
+    </div>
+    <!-- End Google Docs Icon -->
+
+    <!-- Start Google Sheets Icon -->
+    <div id="googlesheets" onclick="navigate('https://docs.google.com/spreadsheets/d/1DTT2gqJIxGJBoMMlHUOcSZmjZT75huIRvqeMWTjxnwM/edit#gid=0')" class="social">
+      <span class="icon googlesheets"><i class="fas fa-table"></i></span>
+    </div>
+    <!-- End Google Sheets Icon -->
+
+    <!-- Start YouTube Icon -->
+    <div id="youtube" onclick="navigate('https://www.youtube.com/')" class="social youtube">
+      <span class="icon youtube"><i class="fab fa-youtube"></i></span>
+    </div>
+    <!-- End YouTube Icon -->
+
+    <!-- Start Grammarly Icon -->
+    <div id="grammarly" onclick="navigate('https://www.grammarly.com/')" class="social">
+      <span class="icon grammarly"><i class="fas fa-spell-check"></i></span>
+    </div>
+    <!-- End Grammarly Icon -->
+
+    <!-- Start Canva Icon -->
+    <div id="canva" onclick="navigate('https://www.canva.com/')" class="social canva">
+      <span class="icon canva"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeZJT7RQoGbcCO2V7aFo-gAnbD5dfGwkF-xTuTvP9ryesW4aNX3Cg8bBmCtHxX8SsYX-0&usqp=CAU" alt="Canva Logo" width="40"></span>
+    </div>
+    <!-- End Canva Icon -->
+
+    <!-- Start Scribbr Icon -->
+    <div id="scribbr" onclick="navigate('https://www.scribbr.com/plagiarism-checker/')" class="social">
+      <span class="icon scribbr"><img src="https://cdn.homerun.co/43418/scribbr-logo-icon-original-highresolution1621939263logo.png" alt="Scribbr Logo" width="40"></span>
+    </div>
+    <!-- End Scribbr Icon -->
+
+
+  </div>
+
+  <script>
+    function navigate(url) {
+      window.open(url, '_blank').focus();
+    }
+
+    function openApplication(app) {
+      if (app === 'discord') {
+        // Code to open Discord application
+        alert("Opening Discord application...");
+      } else if (app === 'canva') {
+        // Code to open Canva application
+        alert("Opening Canva application...");
+      }
+    }
+  </script>
+
+</body>
+
+</html>
